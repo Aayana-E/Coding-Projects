@@ -3,6 +3,7 @@
 #include <stdlib.h> //random num
 #include <time.h> //random seed
 #include <windows.h>//sleep
+#include <conio.h>
 
 int main(){
 
@@ -48,12 +49,28 @@ int main(){
 }
 
 void PvP(){
+     //New 12/7/2024
     char P1Choice;
     char P2Choice;
     printf("Player 1 Please enter your choice.");
     printf("r: Rock, p: Paper, s: Scissors.");
     getchar();//Clears the newline character 
     scanf("%c", &P1Choice);//saves character into P1Choice
+   
+    printf("Give Player 2 the keyboard\n");
+    Sleep(1000);
+    printf("3...\n");
+    Sleep(1000);
+    printf("2...\n");
+    Sleep(1000);
+    printf("1...\n");
+    system("cls");//Clears console
+
+    printf("Player 2 Please enter your choice");
+    getchar();
+    scanf("%c",&P2Choice);
+    //Next Week
+    
 }
 
 
