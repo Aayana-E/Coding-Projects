@@ -70,6 +70,21 @@ void PvP(){
     getchar();
     scanf("%c",&P2Choice);
     //Next Week
+    if (P1Choice == P2Choice){
+        printf(" IT WAS A TIE.");
+    }
+    else if (P1Choice == 'p' && P2Choice == 'r'){
+        printf("Player 1 won");
+    }
+    else if (P1Choice == 's' && P2Choice == 'p'){
+        printf("Player 1 won");
+    }
+    else if (P1Choice == 'r' && P2Choice == 's'){
+        printf("Player 1 won");
+    }
+    else{
+        printf("Player 2 won");
+    }
     
 }
 
