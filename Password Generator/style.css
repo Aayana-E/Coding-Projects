@@ -1,0 +1,42 @@
+body{
+	background-color: #e3e3e3;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	height: 100vh;/* vh = view height fills up display */
+	margin:0;
+	font-family: Arial, sans-serif; 
+
+}
+
+.main{
+	background: darkgray;
+	color: purple;
+	padding: 20px 30px;
+	border-radius: 12px;
+	box-shadow: 0 0 10px darkpurple;
+	text-align: center;
+	border-raidus:12px;
+}
+
+.controls{
+	margin-bottom: 15px;
+}
+
+input[type="number"], input[type="text"]{
+	padding:8px;
+	margin:5px;
+	width: 250px;
+}
+
+button{
+	padding:8px 15px;
+	background-color: #4caf50;
+	color:white;
+	border: none; /*solid, dotted, dash, double*/
+	border-radius: 6px; /*curved border */
+}
+
+button:hover{
+	background-color: #45a049;
+}
