@@ -1,0 +1,63 @@
+#a bunch of turtles swapping positions and you have to find the odd turtle 
+#the turtles turn the same colour when it's time to guess
+import turtle
+import random
+import time
+
+screenWidth = 700
+screenHeight = 700
+
+Screen = turtle.Screen()
+Screen.setup(width= screenWidth, height =screenHeight , startx=0, starty =0)
+Screen.bgcolor("black")#html colour code
+#f0a3ff
+#Array = list of objects
+Turtles = []
+NumTurtles = 7
+for i in range(NumTurtles):
+    NewTurtle = turtle.Turtle()
+    NewTurtle.color("#de87ff")
+    NewTurtle.shape("turtle")#turtle,classic,arrow,square,circle,triangle
+    NewTurtle.shapesize(2)
+    Turtles.append(NewTurtle)
+
+#Choosen
+Choosen = random.randint(0,len(Turtles))
+print("Choosen one ",Choosen)
+#Call element by index in arrau
+Turtles[Choosen].color("#b400f9")
+
+#Infinte loop
+while True:
+    for t in Turtles:
+        t.penup()
+        t.speed(3)#1 - 10, 0
+        x = random.randint(-screenWidth/2, screenWidth/2) 
+        y = random.randint(-screenHeight/2, screenHeight/2) 
+        t.goto(x,y)
+    time.sleep(0.1)#makes code wait
+
+#Next have it stop and all turtles change same colour
+#Have the player click/guess the right turtle
+#whatever else after
+
+#keep at bottom
+Screen.mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
