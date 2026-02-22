@@ -52,6 +52,16 @@ print(number[len(number)-1])
 # Declare a variable and assign it to the list [1,2,3,4,5]. 
 # Calculate then output the list in reverse order. We will be changing the values when grading.
 # 40pts
+numbers = [1,2,3,4,5]
+#for i in range(len(numbers)):
+for i in range(5): 
+    total += numbers[i]
+print(total)
+
+#Option 2
+numbers = [1,2,3,4,5]. 
+total= sum(numbers)
+print(total)
 
 
 # 8
@@ -67,7 +77,15 @@ print(number[len(number)-1])
 # 10
 # Declare a variable and assign it to "froglizardfroglizard". Output True if "frog" and "lizard" appear the same amount of times. Output False if different. We will be changing the values when grading.
 # 50pts
-
+Number10 = "froglizardfroglizard"
+FrogCount = 0
+LizardCount = 0 
+FrogCount = Number10.count("frog")
+LizardCount = Number10.count("lizard")
+if LizardCount == FrogCount:
+    print("True")
+else:
+    print("False")
 
 # 11
 # Declare a variable and assign it to the list[8,6,2,8,7,5,2]. Return the sum of the numbers in the list, except leave out any 8's or 2's. The example would return the answer 18. We will be changing the values when grading.
